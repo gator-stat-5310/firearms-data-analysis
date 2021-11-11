@@ -1,0 +1,1625 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0822.2038                               -->
+<workbook source-build='2021.3.0 (20213.21.0822.2038)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='firearm_background_data+' inline='true' name='federated.10vr0mt1j1ity815lmpul1nti7pz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='firearm_background_data' name='textscan.0ppwy4q0klblad1059cu71tb7y7o'>
+            <connection class='textscan' directory='C:/Users/JasSu/Documents/UHD/Sem4/CS6301/project/data' filename='firearm_background_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ppwy4q0klblad1059cu71tb7y7o' name='firearm_background_data.csv' table='[firearm_background_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='month' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='integer' name='permit' ordinal='2' />
+            <column datatype='integer' name='permit_recheck' ordinal='3' />
+            <column datatype='integer' name='handgun' ordinal='4' />
+            <column datatype='integer' name='long_gun' ordinal='5' />
+            <column datatype='integer' name='other' ordinal='6' />
+            <column datatype='integer' name='multiple' ordinal='7' />
+            <column datatype='integer' name='admin' ordinal='8' />
+            <column datatype='integer' name='prepawn_handgun' ordinal='9' />
+            <column datatype='integer' name='prepawn_long_gun' ordinal='10' />
+            <column datatype='integer' name='prepawn_other' ordinal='11' />
+            <column datatype='integer' name='redemption_handgun' ordinal='12' />
+            <column datatype='integer' name='redemption_long_gun' ordinal='13' />
+            <column datatype='integer' name='redemption_other' ordinal='14' />
+            <column datatype='integer' name='returned_handgun' ordinal='15' />
+            <column datatype='integer' name='returned_long_gun' ordinal='16' />
+            <column datatype='integer' name='returned_other' ordinal='17' />
+            <column datatype='integer' name='rentals_handgun' ordinal='18' />
+            <column datatype='integer' name='rentals_long_gun' ordinal='19' />
+            <column datatype='integer' name='private_sale_handgun' ordinal='20' />
+            <column datatype='integer' name='private_sale_long_gun' ordinal='21' />
+            <column datatype='integer' name='private_sale_other' ordinal='22' />
+            <column datatype='integer' name='return_to_seller_handgun' ordinal='23' />
+            <column datatype='integer' name='return_to_seller_long_gun' ordinal='24' />
+            <column datatype='integer' name='return_to_seller_other' ordinal='25' />
+            <column datatype='integer' name='totals' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ppwy4q0klblad1059cu71tb7y7o' name='firearm_background_data.csv' table='[firearm_background_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='month' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='integer' name='permit' ordinal='2' />
+            <column datatype='integer' name='permit_recheck' ordinal='3' />
+            <column datatype='integer' name='handgun' ordinal='4' />
+            <column datatype='integer' name='long_gun' ordinal='5' />
+            <column datatype='integer' name='other' ordinal='6' />
+            <column datatype='integer' name='multiple' ordinal='7' />
+            <column datatype='integer' name='admin' ordinal='8' />
+            <column datatype='integer' name='prepawn_handgun' ordinal='9' />
+            <column datatype='integer' name='prepawn_long_gun' ordinal='10' />
+            <column datatype='integer' name='prepawn_other' ordinal='11' />
+            <column datatype='integer' name='redemption_handgun' ordinal='12' />
+            <column datatype='integer' name='redemption_long_gun' ordinal='13' />
+            <column datatype='integer' name='redemption_other' ordinal='14' />
+            <column datatype='integer' name='returned_handgun' ordinal='15' />
+            <column datatype='integer' name='returned_long_gun' ordinal='16' />
+            <column datatype='integer' name='returned_other' ordinal='17' />
+            <column datatype='integer' name='rentals_handgun' ordinal='18' />
+            <column datatype='integer' name='rentals_long_gun' ordinal='19' />
+            <column datatype='integer' name='private_sale_handgun' ordinal='20' />
+            <column datatype='integer' name='private_sale_long_gun' ordinal='21' />
+            <column datatype='integer' name='private_sale_other' ordinal='22' />
+            <column datatype='integer' name='return_to_seller_handgun' ordinal='23' />
+            <column datatype='integer' name='return_to_seller_long_gun' ordinal='24' />
+            <column datatype='integer' name='return_to_seller_other' ordinal='25' />
+            <column datatype='integer' name='totals' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>permit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[permit]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>permit</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>permit_recheck</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[permit_recheck]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>permit_recheck</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[handgun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>handgun</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[long_gun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>long_gun</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[other]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>other</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>multiple</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[multiple]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>multiple</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>admin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[admin]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>admin</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prepawn_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prepawn_handgun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>prepawn_handgun</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prepawn_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prepawn_long_gun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>prepawn_long_gun</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prepawn_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prepawn_other]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>prepawn_other</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redemption_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[redemption_handgun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>redemption_handgun</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redemption_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[redemption_long_gun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>redemption_long_gun</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redemption_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[redemption_other]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>redemption_other</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returned_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[returned_handgun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>returned_handgun</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returned_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[returned_long_gun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>returned_long_gun</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returned_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[returned_other]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>returned_other</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rentals_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rentals_handgun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>rentals_handgun</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rentals_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rentals_long_gun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>rentals_long_gun</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>private_sale_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[private_sale_handgun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>private_sale_handgun</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>private_sale_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[private_sale_long_gun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>private_sale_long_gun</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>private_sale_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[private_sale_other]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>private_sale_other</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_to_seller_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[return_to_seller_handgun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>return_to_seller_handgun</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_to_seller_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[return_to_seller_long_gun]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>return_to_seller_long_gun</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_to_seller_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[return_to_seller_other]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>return_to_seller_other</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totals]</local-name>
+            <parent-name>[firearm_background_data.csv]</parent-name>
+            <remote-alias>totals</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='firearm_background_data.csv' datatype='table' name='[__tableau_internal_object_id__].[firearm_background_data.csv_462BAF5656D845889BD1518105434CD5]' role='measure' type='quantitative' />
+      <column datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='firearm_background_data.csv' id='firearm_background_data.csv_462BAF5656D845889BD1518105434CD5'>
+            <properties context=''>
+              <relation connection='textscan.0ppwy4q0klblad1059cu71tb7y7o' name='firearm_background_data.csv' table='[firearm_background_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='month' ordinal='0' />
+                  <column datatype='string' name='state' ordinal='1' />
+                  <column datatype='integer' name='permit' ordinal='2' />
+                  <column datatype='integer' name='permit_recheck' ordinal='3' />
+                  <column datatype='integer' name='handgun' ordinal='4' />
+                  <column datatype='integer' name='long_gun' ordinal='5' />
+                  <column datatype='integer' name='other' ordinal='6' />
+                  <column datatype='integer' name='multiple' ordinal='7' />
+                  <column datatype='integer' name='admin' ordinal='8' />
+                  <column datatype='integer' name='prepawn_handgun' ordinal='9' />
+                  <column datatype='integer' name='prepawn_long_gun' ordinal='10' />
+                  <column datatype='integer' name='prepawn_other' ordinal='11' />
+                  <column datatype='integer' name='redemption_handgun' ordinal='12' />
+                  <column datatype='integer' name='redemption_long_gun' ordinal='13' />
+                  <column datatype='integer' name='redemption_other' ordinal='14' />
+                  <column datatype='integer' name='returned_handgun' ordinal='15' />
+                  <column datatype='integer' name='returned_long_gun' ordinal='16' />
+                  <column datatype='integer' name='returned_other' ordinal='17' />
+                  <column datatype='integer' name='rentals_handgun' ordinal='18' />
+                  <column datatype='integer' name='rentals_long_gun' ordinal='19' />
+                  <column datatype='integer' name='private_sale_handgun' ordinal='20' />
+                  <column datatype='integer' name='private_sale_long_gun' ordinal='21' />
+                  <column datatype='integer' name='private_sale_other' ordinal='22' />
+                  <column datatype='integer' name='return_to_seller_handgun' ordinal='23' />
+                  <column datatype='integer' name='return_to_seller_long_gun' ordinal='24' />
+                  <column datatype='integer' name='return_to_seller_other' ordinal='25' />
+                  <column datatype='integer' name='totals' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='firearm_background_data (firearm_background_data)' inline='true' name='federated.15oazif0a9fr9612izvmp0rnjohu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='firearm_background_data' name='excel-direct.0xbl3ho1u8l2271f0m6wa0io67rq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/JasSu/Documents/UHD/Sem4/CS6301/project/data/firearm_background_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0xbl3ho1u8l2271f0m6wa0io67rq' name='firearm_background_data' table='[firearm_background_data$]' type='table'>
+          <columns gridOrigin='A1:AA10001:no:A1:AA10001:0' header='yes' outcome='6'>
+            <column datatype='string' name='month' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='integer' name='permit' ordinal='2' />
+            <column datatype='integer' name='permit_recheck' ordinal='3' />
+            <column datatype='integer' name='handgun' ordinal='4' />
+            <column datatype='integer' name='long_gun' ordinal='5' />
+            <column datatype='integer' name='other' ordinal='6' />
+            <column datatype='integer' name='multiple' ordinal='7' />
+            <column datatype='integer' name='admin' ordinal='8' />
+            <column datatype='integer' name='prepawn_handgun' ordinal='9' />
+            <column datatype='integer' name='prepawn_long_gun' ordinal='10' />
+            <column datatype='integer' name='prepawn_other' ordinal='11' />
+            <column datatype='integer' name='redemption_handgun' ordinal='12' />
+            <column datatype='integer' name='redemption_long_gun' ordinal='13' />
+            <column datatype='integer' name='redemption_other' ordinal='14' />
+            <column datatype='integer' name='returned_handgun' ordinal='15' />
+            <column datatype='integer' name='returned_long_gun' ordinal='16' />
+            <column datatype='integer' name='returned_other' ordinal='17' />
+            <column datatype='integer' name='rentals_handgun' ordinal='18' />
+            <column datatype='integer' name='rentals_long_gun' ordinal='19' />
+            <column datatype='integer' name='private_sale_handgun' ordinal='20' />
+            <column datatype='integer' name='private_sale_long_gun' ordinal='21' />
+            <column datatype='integer' name='private_sale_other' ordinal='22' />
+            <column datatype='integer' name='return_to_seller_handgun' ordinal='23' />
+            <column datatype='integer' name='return_to_seller_long_gun' ordinal='24' />
+            <column datatype='integer' name='return_to_seller_other' ordinal='25' />
+            <column datatype='integer' name='totals' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0xbl3ho1u8l2271f0m6wa0io67rq' name='firearm_background_data' table='[firearm_background_data$]' type='table'>
+          <columns gridOrigin='A1:AA10001:no:A1:AA10001:0' header='yes' outcome='6'>
+            <column datatype='string' name='month' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='integer' name='permit' ordinal='2' />
+            <column datatype='integer' name='permit_recheck' ordinal='3' />
+            <column datatype='integer' name='handgun' ordinal='4' />
+            <column datatype='integer' name='long_gun' ordinal='5' />
+            <column datatype='integer' name='other' ordinal='6' />
+            <column datatype='integer' name='multiple' ordinal='7' />
+            <column datatype='integer' name='admin' ordinal='8' />
+            <column datatype='integer' name='prepawn_handgun' ordinal='9' />
+            <column datatype='integer' name='prepawn_long_gun' ordinal='10' />
+            <column datatype='integer' name='prepawn_other' ordinal='11' />
+            <column datatype='integer' name='redemption_handgun' ordinal='12' />
+            <column datatype='integer' name='redemption_long_gun' ordinal='13' />
+            <column datatype='integer' name='redemption_other' ordinal='14' />
+            <column datatype='integer' name='returned_handgun' ordinal='15' />
+            <column datatype='integer' name='returned_long_gun' ordinal='16' />
+            <column datatype='integer' name='returned_other' ordinal='17' />
+            <column datatype='integer' name='rentals_handgun' ordinal='18' />
+            <column datatype='integer' name='rentals_long_gun' ordinal='19' />
+            <column datatype='integer' name='private_sale_handgun' ordinal='20' />
+            <column datatype='integer' name='private_sale_long_gun' ordinal='21' />
+            <column datatype='integer' name='private_sale_other' ordinal='22' />
+            <column datatype='integer' name='return_to_seller_handgun' ordinal='23' />
+            <column datatype='integer' name='return_to_seller_long_gun' ordinal='24' />
+            <column datatype='integer' name='return_to_seller_other' ordinal='25' />
+            <column datatype='integer' name='totals' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AA10001:no:A1:AA10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>permit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[permit]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>permit</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>permit_recheck</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[permit_recheck]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>permit_recheck</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[handgun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>handgun</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[long_gun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>long_gun</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[other]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>other</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>multiple</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[multiple]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>multiple</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>admin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[admin]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>admin</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prepawn_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prepawn_handgun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>prepawn_handgun</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prepawn_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prepawn_long_gun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>prepawn_long_gun</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prepawn_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prepawn_other]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>prepawn_other</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redemption_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[redemption_handgun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>redemption_handgun</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redemption_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[redemption_long_gun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>redemption_long_gun</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redemption_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[redemption_other]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>redemption_other</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returned_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[returned_handgun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>returned_handgun</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returned_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[returned_long_gun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>returned_long_gun</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returned_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[returned_other]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>returned_other</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rentals_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rentals_handgun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>rentals_handgun</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rentals_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rentals_long_gun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>rentals_long_gun</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>private_sale_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[private_sale_handgun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>private_sale_handgun</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>private_sale_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[private_sale_long_gun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>private_sale_long_gun</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>private_sale_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[private_sale_other]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>private_sale_other</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_to_seller_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[return_to_seller_handgun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>return_to_seller_handgun</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_to_seller_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[return_to_seller_long_gun]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>return_to_seller_long_gun</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_to_seller_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[return_to_seller_other]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>return_to_seller_other</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totals]</local-name>
+            <parent-name>[firearm_background_data]</parent-name>
+            <remote-alias>totals</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firearm!background!data_2FB4981EF0D64758893207615932B3C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Year' datatype='real' name='[Calculation_1022317152337158144]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='firearm_background_data' datatype='table' name='[__tableau_internal_object_id__].[firearm!background!data_2FB4981EF0D64758893207615932B3C1]' role='measure' type='quantitative' />
+      <column caption='Admin' datatype='integer' name='[admin]' role='measure' type='quantitative' />
+      <column caption='Handgun' datatype='integer' name='[handgun]' role='measure' type='quantitative' />
+      <column caption='Long Gun' datatype='integer' name='[long_gun]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+      <column caption='Multiple' datatype='integer' name='[multiple]' role='measure' type='quantitative' />
+      <column caption='Other' datatype='integer' name='[other]' role='measure' type='quantitative' />
+      <column caption='Permit' datatype='integer' name='[permit]' role='measure' type='quantitative' />
+      <column caption='Permit Recheck' datatype='integer' name='[permit_recheck]' role='measure' type='quantitative' />
+      <column caption='Prepawn Handgun' datatype='integer' name='[prepawn_handgun]' role='measure' type='quantitative' />
+      <column caption='Prepawn Long Gun' datatype='integer' name='[prepawn_long_gun]' role='measure' type='quantitative' />
+      <column caption='Prepawn Other' datatype='integer' name='[prepawn_other]' role='measure' type='quantitative' />
+      <column caption='Private Sale Handgun' datatype='integer' name='[private_sale_handgun]' role='measure' type='quantitative' />
+      <column caption='Private Sale Long Gun' datatype='integer' name='[private_sale_long_gun]' role='measure' type='quantitative' />
+      <column caption='Private Sale Other' datatype='integer' name='[private_sale_other]' role='measure' type='quantitative' />
+      <column caption='Redemption Handgun' datatype='integer' name='[redemption_handgun]' role='measure' type='quantitative' />
+      <column caption='Redemption Long Gun' datatype='integer' name='[redemption_long_gun]' role='measure' type='quantitative' />
+      <column caption='Redemption Other' datatype='integer' name='[redemption_other]' role='measure' type='quantitative' />
+      <column caption='Rentals Handgun' datatype='integer' name='[rentals_handgun]' role='measure' type='quantitative' />
+      <column caption='Rentals Long Gun' datatype='integer' name='[rentals_long_gun]' role='measure' type='quantitative' />
+      <column caption='Return To Seller Handgun' datatype='integer' name='[return_to_seller_handgun]' role='measure' type='quantitative' />
+      <column caption='Return To Seller Long Gun' datatype='integer' name='[return_to_seller_long_gun]' role='measure' type='quantitative' />
+      <column caption='Return To Seller Other' datatype='integer' name='[return_to_seller_other]' role='measure' type='quantitative' />
+      <column caption='Returned Handgun' datatype='integer' name='[returned_handgun]' role='measure' type='quantitative' />
+      <column caption='Returned Long Gun' datatype='integer' name='[returned_long_gun]' role='measure' type='quantitative' />
+      <column caption='Returned Other' datatype='integer' name='[returned_other]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Totals' datatype='integer' name='[totals]' role='measure' type='quantitative' />
+      <column-instance column='[long_gun]' derivation='Sum' name='[sum:long_gun:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[multiple]' derivation='Sum' name='[sum:multiple:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[permit]' derivation='Sum' name='[sum:permit:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:long_gun:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:multiple:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:permit:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='firearm_background_data' id='firearm!background!data_2FB4981EF0D64758893207615932B3C1'>
+            <properties context=''>
+              <relation connection='excel-direct.0xbl3ho1u8l2271f0m6wa0io67rq' name='firearm_background_data' table='[firearm_background_data$]' type='table'>
+                <columns gridOrigin='A1:AA10001:no:A1:AA10001:0' header='yes' outcome='6'>
+                  <column datatype='string' name='month' ordinal='0' />
+                  <column datatype='string' name='state' ordinal='1' />
+                  <column datatype='integer' name='permit' ordinal='2' />
+                  <column datatype='integer' name='permit_recheck' ordinal='3' />
+                  <column datatype='integer' name='handgun' ordinal='4' />
+                  <column datatype='integer' name='long_gun' ordinal='5' />
+                  <column datatype='integer' name='other' ordinal='6' />
+                  <column datatype='integer' name='multiple' ordinal='7' />
+                  <column datatype='integer' name='admin' ordinal='8' />
+                  <column datatype='integer' name='prepawn_handgun' ordinal='9' />
+                  <column datatype='integer' name='prepawn_long_gun' ordinal='10' />
+                  <column datatype='integer' name='prepawn_other' ordinal='11' />
+                  <column datatype='integer' name='redemption_handgun' ordinal='12' />
+                  <column datatype='integer' name='redemption_long_gun' ordinal='13' />
+                  <column datatype='integer' name='redemption_other' ordinal='14' />
+                  <column datatype='integer' name='returned_handgun' ordinal='15' />
+                  <column datatype='integer' name='returned_long_gun' ordinal='16' />
+                  <column datatype='integer' name='returned_other' ordinal='17' />
+                  <column datatype='integer' name='rentals_handgun' ordinal='18' />
+                  <column datatype='integer' name='rentals_long_gun' ordinal='19' />
+                  <column datatype='integer' name='private_sale_handgun' ordinal='20' />
+                  <column datatype='integer' name='private_sale_long_gun' ordinal='21' />
+                  <column datatype='integer' name='private_sale_other' ordinal='22' />
+                  <column datatype='integer' name='return_to_seller_handgun' ordinal='23' />
+                  <column datatype='integer' name='return_to_seller_long_gun' ordinal='24' />
+                  <column datatype='integer' name='return_to_seller_other' ordinal='25' />
+                  <column datatype='integer' name='totals' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Longguns vs private sale'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firearm_background_data (firearm_background_data)' name='federated.15oazif0a9fr9612izvmp0rnjohu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15oazif0a9fr9612izvmp0rnjohu'>
+            <column caption='Long Gun' datatype='integer' name='[long_gun]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Private Sale Long Gun' datatype='integer' name='[private_sale_long_gun]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[long_gun]' derivation='Sum' name='[sum:long_gun:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[private_sale_long_gun]' derivation='Sum' name='[sum:private_sale_long_gun:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15oazif0a9fr9612izvmp0rnjohu].[none:state:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:long_gun:qk]</rows>
+        <cols>[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:private_sale_long_gun:qk]</cols>
+      </table>
+      <simple-id uuid='{B5AB883F-93ED-418F-9622-060E77C46976}' />
+    </worksheet>
+    <worksheet name='MonthVsAllSalesComparison'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firearm_background_data (firearm_background_data)' name='federated.15oazif0a9fr9612izvmp0rnjohu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15oazif0a9fr9612izvmp0rnjohu'>
+            <column caption='Handgun' datatype='integer' name='[handgun]' role='measure' type='quantitative' />
+            <column caption='Long Gun' datatype='integer' name='[long_gun]' role='measure' type='quantitative' />
+            <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+            <column caption='Multiple' datatype='integer' name='[multiple]' role='measure' type='quantitative' />
+            <column-instance column='[month]' derivation='None' name='[none:month:nk]' pivot='key' type='nominal' />
+            <column caption='Other' datatype='integer' name='[other]' role='measure' type='quantitative' />
+            <column-instance column='[handgun]' derivation='Sum' name='[sum:handgun:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[long_gun]' derivation='Sum' name='[sum:long_gun:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[multiple]' derivation='Sum' name='[sum:multiple:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[other]' derivation='Sum' name='[sum:other:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15oazif0a9fr9612izvmp0rnjohu].[none:month:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-01&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-02&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-03&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-04&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-05&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-06&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-07&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-08&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-09&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-10&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-11&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2015-12&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-01&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-02&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-03&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-04&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-05&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-06&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-07&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-08&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-09&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-10&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-11&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2016-12&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-01&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-02&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-03&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-04&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-05&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-06&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-07&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-08&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-09&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-10&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-11&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2017-12&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-01&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-02&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-03&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-04&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-05&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-06&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-07&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-08&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-09&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-10&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-11&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2018-12&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-01&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-02&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-03&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-04&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-05&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-06&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-07&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-08&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-09&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-10&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-11&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2019-12&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-01&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-02&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-03&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-04&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-05&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-06&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-07&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-08&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-09&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-10&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-11&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2020-12&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2021-01&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2021-02&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2021-03&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2021-04&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2021-05&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2021-06&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2021-07&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2021-08&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2021-09&quot;' />
+              <groupfilter function='member' level='[none:month:nk]' member='&quot;2021-10&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15oazif0a9fr9612izvmp0rnjohu].[none:month:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:long_gun:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:handgun:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:multiple:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:other:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.15oazif0a9fr9612izvmp0rnjohu].[sum:long_gun:qk] + ([federated.15oazif0a9fr9612izvmp0rnjohu].[sum:handgun:qk] + ([federated.15oazif0a9fr9612izvmp0rnjohu].[sum:multiple:qk] + [federated.15oazif0a9fr9612izvmp0rnjohu].[sum:other:qk])))</rows>
+        <cols>[federated.15oazif0a9fr9612izvmp0rnjohu].[none:month:nk]</cols>
+      </table>
+      <simple-id uuid='{C0B5776C-5A8E-4AF6-B4C9-681AFE58E6B0}' />
+    </worksheet>
+    <worksheet name='Permits vs state'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firearm_background_data (firearm_background_data)' name='federated.15oazif0a9fr9612izvmp0rnjohu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15oazif0a9fr9612izvmp0rnjohu'>
+            <column caption='Multiple' datatype='integer' name='[multiple]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Permit' datatype='integer' name='[permit]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[multiple]' derivation='Sum' name='[sum:multiple:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[permit]' derivation='Sum' name='[sum:permit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:multiple:qk]' num-steps='5' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:multiple:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.15oazif0a9fr9612izvmp0rnjohu].[none:state:nk]</rows>
+        <cols>[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:permit:qk]</cols>
+      </table>
+      <simple-id uuid='{6D4FF207-FA9C-4708-810F-74B6A8DE0043}' />
+    </worksheet>
+    <worksheet name='Statewise-handguns'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firearm_background_data (firearm_background_data)' name='federated.15oazif0a9fr9612izvmp0rnjohu' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.15oazif0a9fr9612izvmp0rnjohu'>
+            <column caption='Handgun' datatype='integer' name='[handgun]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[handgun]' derivation='Sum' name='[sum:handgun:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.15oazif0a9fr9612izvmp0rnjohu].[Longitude (generated)]' field-type='quantitative' max='40948049.450727612' min='22486212.431108922' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.15oazif0a9fr9612izvmp0rnjohu].[Latitude (generated)]' field-type='quantitative' max='8838824.8962847125' min='-3085150.9427630571' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15oazif0a9fr9612izvmp0rnjohu].[none:state:nk]' />
+              <size column='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:handgun:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.15oazif0a9fr9612izvmp0rnjohu].[Latitude (generated)]</rows>
+        <cols>[federated.15oazif0a9fr9612izvmp0rnjohu].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{97B476FF-C08C-4BAA-B596-F958C200BC2F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='5187' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='6017' />
+            <zone h='82676' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='16494'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{89648651-B161-4C92-8C60-392C15AE5529}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='dashboard1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Statewise-handguns' w='41200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98000' id='10' name='Permits vs state' w='41200' x='42000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone fixed-size='332' h='42500' id='8' is-fixed='true' name='Statewise-handguns' pane-specification-id='0' param='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:handgun:qk]' type-v2='size' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='505' h='51500' id='9' is-fixed='true' name='Statewise-handguns' pane-specification-id='0' param='[federated.15oazif0a9fr9612izvmp0rnjohu].[none:state:nk]' type-v2='color' w='16000' x='83200' y='43500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4000' id='11' name='Permits vs state' pane-specification-id='1' param='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:multiple:qk]' type-v2='color' w='16000' x='83200' y='95000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='22' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Statewise-handguns' w='41200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='332' h='42500' id='8' name='Statewise-handguns' pane-specification-id='0' param='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:handgun:qk]' type-v2='size' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='505' h='51500' id='9' name='Statewise-handguns' pane-specification-id='0' param='[federated.15oazif0a9fr9612izvmp0rnjohu].[none:state:nk]' type-v2='color' w='16000' x='83200' y='43500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='10' is-fixed='true' name='Permits vs state' w='41200' x='42000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4000' id='11' name='Permits vs state' pane-specification-id='1' param='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:multiple:qk]' type-v2='color' w='16000' x='83200' y='95000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3EC41953-D7F9-4A5B-917F-5A07242B95E6}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='75'>
+    <window class='worksheet' name='Statewise-handguns'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:handgun:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.15oazif0a9fr9612izvmp0rnjohu].[none:state:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C3216E12-406D-488D-BE22-99BA46C1935D}' />
+    </window>
+    <window class='worksheet' name='Longguns vs private sale'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15oazif0a9fr9612izvmp0rnjohu].[none:state:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{92CE677E-6481-4425-BE41-AC80F00D3EC3}' />
+    </window>
+    <window class='worksheet' name='Permits vs state'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.15oazif0a9fr9612izvmp0rnjohu].[sum:multiple:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{562AA035-A395-4035-8C18-EC689679ACBF}' />
+    </window>
+    <window class='worksheet' maximized='true' name='MonthVsAllSalesComparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{69AB4592-5B87-48F8-AF4B-93EE1031126B}' />
+    </window>
+    <window class='dashboard' name='dashboard1'>
+      <viewpoints>
+        <viewpoint name='Permits vs state' />
+        <viewpoint name='Statewise-handguns'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{42FD53C3-9E40-4A5C-9847-689EB8610C8B}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{AD358748-2750-4866-AF83-DB3F3BDD24AA}' />
+    </window>
+  </windows>
+</workbook>
